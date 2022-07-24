@@ -12,13 +12,13 @@ import java.util.Scanner;
 
 @Component
 public class AtmUI {
-
+	@Autowired
 	private ATM atm;
 
-	@Autowired
+	/*@Autowired
 	public AtmUI(ATM atm) {
 		this.atm = atm;
-	}
+	}*/
 
 	public void run() {
 		Scanner in = new Scanner(System.in);

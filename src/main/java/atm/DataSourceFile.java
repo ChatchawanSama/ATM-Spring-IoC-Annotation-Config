@@ -11,15 +11,15 @@ import java.util.Scanner;
 
 @Component
 public class DataSourceFile implements DataSource {
-
+    @Value("${filename}")
     private String filename;
 
     /**
      * @param filename the name of the customer file
      */
-    public DataSourceFile(@Value("$(filename)") String filename) {
+    /*public DataSourceFile(@Value("$(filename)") String filename) {
         this.filename = filename;
-    }
+    }*/
 
     /**
      * Reads the customer numbers and pins
